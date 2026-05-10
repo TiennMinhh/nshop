@@ -8,4 +8,15 @@
         <UserSecretsId>dad787b3-6bce-481b-99dc-3303d2262db0</UserSecretsId>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Aspire.Hosting.Kafka" Version="13.3.0" />
+      <PackageReference Include="Aspire.Hosting.MongoDB" Version="13.3.0" />
+      <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="13.3.0" />
+      <PackageReference Include="Aspire.Hosting.Redis" Version="13.3.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Aspire\nShop.Aspire.EventStoreDB\nShop.Aspire.EventStoreDB.csproj" IsAspireProjectResource="false" />
+    </ItemGroup>
+
 </Project>
