@@ -30,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tenancy", "Tenancy", "{C34A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nShop.Tenancy.Abstractions", "Tenancy\nShop.Tenancy.Abstractions\nShop.Tenancy.Abstractions.csproj", "{89A0AE0E-787F-4BEB-9B27-69F03310E77E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nShop.Catalog.Api", "Apis\Catalog\nShop.Catalog.Api\nShop.Catalog.Api.csproj", "{6DEC826D-2563-4D04-8243-94169048F817}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +78,10 @@ Global
 		{89A0AE0E-787F-4BEB-9B27-69F03310E77E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89A0AE0E-787F-4BEB-9B27-69F03310E77E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89A0AE0E-787F-4BEB-9B27-69F03310E77E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DEC826D-2563-4D04-8243-94169048F817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DEC826D-2563-4D04-8243-94169048F817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DEC826D-2563-4D04-8243-94169048F817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DEC826D-2563-4D04-8243-94169048F817}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DD864A69-21C2-409F-B962-A23C7AACD42F} = {5B552AE2-E03C-4A77-A502-FF0EF9E439D7}
@@ -83,5 +89,6 @@ Global
 		{C3ABF23A-CE56-4AC7-AC09-240079B517B8} = {A86AC5A3-6817-4D4A-80CA-32B327132C54}
 		{BBA4AA24-9A12-4249-AE48-AB71124E7377} = {C3ABF23A-CE56-4AC7-AC09-240079B517B8}
 		{89A0AE0E-787F-4BEB-9B27-69F03310E77E} = {C34AA5D4-D369-4183-88AF-30E751DD3AEA}
+		{6DEC826D-2563-4D04-8243-94169048F817} = {C3ABF23A-CE56-4AC7-AC09-240079B517B8}
 	EndGlobalSection
 EndGlobal

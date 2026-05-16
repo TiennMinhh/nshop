@@ -1,0 +1,157 @@
+syntax = "proto3";
+
+option csharp_namespace = "nShop.Catalog.Api";
+
+service CatalogService {
+  rpc CreateCategory (CreateCategoryRequest) returns (CreateCategoryResponse);
+  rpc UpdateCategory (UpdateCategoryRequest) returns (UpdateCategoryResponse);
+
+  rpc CreateProduct (CreateProductRequest) returns (CreateProductResponse);
+  rpc UpdateProduct (UpdateProductRequest) returns (UpdateProductResponse);
+
+  rpc FindProducts (FindProductsRequest) returns (FindProductsResponse);
+  rpc FindProductById (FindProductByIdRequest) returns (FindProductByIdResponse);
+}
+
+message Paging {
+  int64 offset = 1;
+  int64 limit = 2;
+}
+
+message ResponsePagination {
+  int64 offset = 1;
+  int64 page_length = 2;
+  int64 total = 3;
+}
+
+message CreateCategoryRequest {
+  string tenant_id = 1;
+  string parent_id = 2;
+  string name = 3;
+  string slug = 4;
+}
+
+message CreateCategoryResponse {
+  string id = 1;
+  string status_code = 2; // ok if no error
+  string reason_phrase = 3; // error message
+}
+
+message UpdateCategoryRequest {
+  string category_id = 1;
+  string parent_id = 2;
+  string name = 3;
+  string slug = 4;
+}
+
+message UpdateCategoryResponse {
+  string id = 1;
+  string status_code = 2; // ok if no error
+  string reason_phrase = 3; // error message
+}
+
+message CreateProductRequest {
+  string tenant_id = 1;
+  string category_id = 2;
+  string name = 3;
+  string description = 4;
+  double price = 5;
+  repeated string tags = 6;
+  string slug = 7;
+  repeated string images = 8;
+  repeated string groups = 9;
+}
+
+message CreateProductResponse {
+  string id = 1;
+  string status_code = 2; // ok if no error
+  string reason_phrase = 3; // error message
+}
+
+message UpdateProductRequest {
+  string product_id = 1;
+  string category_id = 2;
+  string name = 3;
+  string description = 4;
+  repeated string tags = 6;
+  string slug = 7;
+  repeated string images = 8;
+  repeated string groups = 9;
+}
+
+message UpdateProductResponse {
+  string id = 1;
+  string status_code = 2; // ok if no error
+  string reason_phrase = 3; // error message
+}
+
+message UpdateProductPriceRequest {
+  string product_id = 1;
+  double normal_price = 2;
+  double discount_price = 3;
+}
+
+message UpdateProductPriceResponse {
+  string id = 1;
+  string status_code = 2; // ok if no error
+  string reason_phrase = 3; // error message
+}
+
+message FindCategoriesRequest {
+  repeated string ids = 1;
+  string tenant_id = 2;
+  string parent_id = 3;
+}
+
+message GrpcCategory {
+  string id = 1;
+  string parent_id = 2;
+  string name = 3;
+  string slug = 4;
+}
+
+message FindCategoriesResponse {
+  repeated GrpcCategory categories = 1;
+}
+
+message GrpcProduct {
+  string id = 1;
+  string category_id = 2;
+  string name = 3;
+  string description = 4;
+  double price = 5;
+  repeated string tags = 6;
+  string slug = 7;
+  repeated string images = 8;
+  repeated string groups = 9;
+  string tenant_id = 10;
+}
+
+message FindProductsRequest {
+  message Filters {
+    repeated string ids = 1;
+    string name = 2;
+    double price_from = 3;
+    double price_to = 4;
+    string category_id = 5;
+    string slug = 6;
+    repeated string tags = 7;
+    repeated string groups = 8;
+  }
+  string tenant_id = 1;
+  Filters filters = 2;
+  Paging paging = 3;
+}
+
+message FindProductsResponse {
+  repeated GrpcProduct products = 1;
+  ResponsePagination pagination = 2;
+}
+
+message FindProductByIdRequest {
+  string product_id = 1;
+}
+
+message FindProductByIdResponse {
+  optional GrpcProduct product = 1;
+}

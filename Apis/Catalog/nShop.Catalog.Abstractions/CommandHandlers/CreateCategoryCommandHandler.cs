@@ -1,4 +1,3 @@
-using FluentValidation;
 using nShop.Catalog.DomainEvents;
 
 namespace nShop.Catalog.CommandHandlers;

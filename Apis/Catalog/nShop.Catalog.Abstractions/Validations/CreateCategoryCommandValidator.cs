@@ -1,5 +1,3 @@
-using FluentValidation;
-
 namespace nShop.Catalog.Validations;
 
 public class CreateCategoryCommandValidator : AbstractValidator<CreateCategoryCommand>

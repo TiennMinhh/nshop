@@ -1,5 +1,6 @@
 // Global using directives
 
+global using FluentValidation;
 global using MediatR;
 global using nShop.Catalog.Aggregates;
 global using nShop.Catalog.Commands;

@@ -11,6 +11,11 @@ public class EventStoreDBRepository(EventStoreClient client, IStreamNameMapper? 
     private readonly IStreamNameMapper _streamNameMapper = streamNameMapper ?? DefaultStreamNameMapper.Instance;
     private readonly IEventTypeNameMapper _eventTypeNameMapper = eventTypeNameMapper ?? DefaultEventTypeNameMapper.Instance;
     
+    public EventStoreDBRepository(string connectionString, IStreamNameMapper? streamNameMapper = default, IEventTypeNameMapper? eventTypeNameMapper = default): 
+        this(new EventStoreClient(EventStoreClientSettings.Create(connectionString)), streamNameMapper, eventTypeNameMapper)
+    {
+    }
+    
     public async Task<T?> FindAsync<T>(Guid id, ulong? version = null, CancellationToken cancellationToken = default) where T : class, IAggregate
     {
         var readResult = _client.ReadStreamAsync(

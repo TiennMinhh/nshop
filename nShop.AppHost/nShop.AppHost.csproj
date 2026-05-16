@@ -16,6 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Apis\Catalog\nShop.Catalog.Api\nShop.Catalog.Api.csproj" />
       <ProjectReference Include="..\Aspire\nShop.Aspire.EventStoreDB\nShop.Aspire.EventStoreDB.csproj" IsAspireProjectResource="false" />
     </ItemGroup>
 
