@@ -16,6 +16,7 @@ public class Category : IAggregate, ITenancyEntity
 
     private readonly List<CategoryEvent> _changes = [];
     
+    //Why version equal 1 at initial? Does it have any specific purpose?
     public Category()
     {
         Version++;
