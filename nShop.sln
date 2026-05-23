@@ -32,6 +32,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nShop.Tenancy.Abstractions"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nShop.Catalog.Api", "Apis\Catalog\nShop.Catalog.Api\nShop.Catalog.Api.csproj", "{6DEC826D-2563-4D04-8243-94169048F817}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nShop.Catalog.SyncService.Abstractions", "Catalog\nShop.Catalog.SyncService.Abstractions\nShop.Catalog.SyncService.Abstractions.csproj", "{FEDA7505-7715-4425-820F-A2ACF8E73C2A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nShop.Catalog.Client.Abstractions", "Catalog\nShop.Catalog.Client.Abstractions\nShop.Catalog.Client.Abstractions.csproj", "{F49792EF-E05B-4A64-AD25-4F52CFE78EFA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -82,6 +86,14 @@ Global
 		{6DEC826D-2563-4D04-8243-94169048F817}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DEC826D-2563-4D04-8243-94169048F817}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DEC826D-2563-4D04-8243-94169048F817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEDA7505-7715-4425-820F-A2ACF8E73C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEDA7505-7715-4425-820F-A2ACF8E73C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEDA7505-7715-4425-820F-A2ACF8E73C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEDA7505-7715-4425-820F-A2ACF8E73C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F49792EF-E05B-4A64-AD25-4F52CFE78EFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F49792EF-E05B-4A64-AD25-4F52CFE78EFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F49792EF-E05B-4A64-AD25-4F52CFE78EFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F49792EF-E05B-4A64-AD25-4F52CFE78EFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{DD864A69-21C2-409F-B962-A23C7AACD42F} = {5B552AE2-E03C-4A77-A502-FF0EF9E439D7}
@@ -90,5 +102,7 @@ Global
 		{BBA4AA24-9A12-4249-AE48-AB71124E7377} = {C3ABF23A-CE56-4AC7-AC09-240079B517B8}
 		{89A0AE0E-787F-4BEB-9B27-69F03310E77E} = {C34AA5D4-D369-4183-88AF-30E751DD3AEA}
 		{6DEC826D-2563-4D04-8243-94169048F817} = {C3ABF23A-CE56-4AC7-AC09-240079B517B8}
+		{FEDA7505-7715-4425-820F-A2ACF8E73C2A} = {C3ABF23A-CE56-4AC7-AC09-240079B517B8}
+		{F49792EF-E05B-4A64-AD25-4F52CFE78EFA} = {C3ABF23A-CE56-4AC7-AC09-240079B517B8}
 	EndGlobalSection
 EndGlobal
