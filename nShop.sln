@@ -32,9 +32,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nShop.Tenancy.Abstractions"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nShop.Catalog.Api", "Apis\Catalog\nShop.Catalog.Api\nShop.Catalog.Api.csproj", "{6DEC826D-2563-4D04-8243-94169048F817}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nShop.Catalog.SyncService.Abstractions", "Catalog\nShop.Catalog.SyncService.Abstractions\nShop.Catalog.SyncService.Abstractions.csproj", "{FEDA7505-7715-4425-820F-A2ACF8E73C2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nShop.Catalog.SyncService.Abstractions", "Apis\Catalog\nShop.Catalog.SyncService.Abstractions\nShop.Catalog.SyncService.Abstractions.csproj", "{FEDA7505-7715-4425-820F-A2ACF8E73C2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nShop.Catalog.Client.Abstractions", "Catalog\nShop.Catalog.Client.Abstractions\nShop.Catalog.Client.Abstractions.csproj", "{F49792EF-E05B-4A64-AD25-4F52CFE78EFA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nShop.Catalog.Client.Abstractions", "Apis\Catalog\nShop.Catalog.Client.Abstractions\nShop.Catalog.Client.Abstractions.csproj", "{F49792EF-E05B-4A64-AD25-4F52CFE78EFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
