@@ -1,5 +1,4 @@
 using nShop.Catalog.Api.Bootstrapping;
-using nShop.Core.SeedWork;
 using nShop.Infrastructure.EventStore.EventStoreDB;
 
 var builder = WebApplication.CreateBuilder(args);

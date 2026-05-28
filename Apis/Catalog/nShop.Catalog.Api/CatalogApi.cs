@@ -1,5 +1,4 @@
 using AutoMapper;
-using MediatR;
 
 namespace nShop.Catalog.Api;
 

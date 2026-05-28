@@ -1,6 +1,6 @@
-using nShop.Catalog.DomainEvents;
+using nShop.Shared;
 
-namespace nShop.Catalog.CommandHandlers;
+namespace nShop.Catalog.Api.Handlers.Commands;
 
 public class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommand, Result<CreateCategoryResponse>>
 {
@@ -37,4 +37,29 @@ public class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryComman
 
         return Result<CreateCategoryResponse>.Success(new CreateCategoryResponse { Id = id });
     }
+}
+
+public class CreateCategoryCommand : IRequest<Result<CreateCategoryResponse>>, ITenancyEntity
+{
+    public Guid? ParentId { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public string Slug { get; set; } = string.Empty;
+    public Guid TenantId { get; set; }
+
+    public CreateCategoryCommand()
+    {
+    }
+
+    public CreateCategoryCommand(Guid tenantId, Guid? parentId, string name, string slug)
+    {
+        TenantId = tenantId;
+        ParentId = parentId;
+        Name = name;
+        Slug = slug;
+    }
+}
+
+public class CreateCategoryResponse
+{
+    public Guid Id { get; set; }
 }

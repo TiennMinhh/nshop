@@ -1,6 +1,3 @@
-using FluentValidation;
-using nShop.Catalog.Aggregates;
-
 namespace nShop.Catalog.Api.Bootstrapping;
 
 public static class RegisterServicesExtensions

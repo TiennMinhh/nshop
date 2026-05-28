@@ -1,4 +1,4 @@
-using nShop.Catalog.Commands;
+using nShop.Catalog.Api.Handlers.Commands;
 
 namespace nShop.Catalog.Api;
 

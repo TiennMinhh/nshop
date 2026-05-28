@@ -1,4 +1,6 @@
-namespace nShop.Catalog.Validations;
+using nShop.Catalog.Api.Handlers.Commands;
+
+namespace nShop.Catalog.Api.Validations;
 
 public class CreateCategoryCommandValidator : AbstractValidator<CreateCategoryCommand>
 {

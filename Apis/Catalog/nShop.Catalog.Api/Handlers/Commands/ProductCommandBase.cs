@@ -1,4 +1,4 @@
-namespace nShop.Catalog.Commands;
+namespace nShop.Catalog.Api.Handlers.Commands;
 
 public class ProductCommandBase : ITenancyEntity
 {
